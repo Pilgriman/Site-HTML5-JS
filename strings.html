@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conceitos Basicos Js</title>
+</head>
+<body>
+<script>
+    var nome='Programador a Bordo'
+    console.log(nome)
+
+    /*para saber a quantidade de caracteres em uma string*/
+    console.log(nome.length)
+
+    /*a string nao precisa estar declarada numa variavel para usar o length */
+    console.log('programador'.length)
+
+    /*convertendo uma string para maiusculo*/
+    console.log('programador'.toUpperCase());
+    /*convertendo uma string para minusculo*/
+    console.log('PROGRAMADOR'.toLowerCase());
+    /*procurar pela posicao de uma string dentro de uma palavra ou frase*/
+    /*caso, eu procure por um valor que inexistente dentro uma palarava receberei  -1 como valor*/
+    console.log(nome.indexOf('dor'));
+    console.log(nome.indexOf('teste'));
+    /*é possivel substituir uma palavra dentro de uma string*/
+    console.log(nome.replace('Programador','Desenvolvedor'));
+    /*É possoivel retornar uma fatia de um texto ou uma palavra*/
+    console.log(nome.slice(3,8));
+    /*removendo os espaços das extremidades de uma string*/
+    var canalYoutube='     Programador a Bordo      ';
+    console.log(canalYoutube);
+    console.log(canalYoutube.trim());
+    /*concatenando frases*/
+    var autor= 'Ayrton';
+    console.log('O canal do Youtube ' + canalYoutube.trim()
+        + ' foi criado por ' + autor);
+    console.log(`O canal do Youtube  ${canalYoutube.trim()} foi criado por ${autor}`);
+</script>
+
+</body>
+</html>

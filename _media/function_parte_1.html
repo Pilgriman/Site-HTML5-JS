@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FUCTION</title>
+    
+</head>
+<body>
+<SCRIPT>
+    function write() {
+        console.log('Programador a Bordo!\n');
+
+    }
+    write();
+
+    function soma() {
+        console.log(2 + 2);
+    }
+        soma();
+
+    function esrevaMensagem(mensagem) {
+        console.log(mensagem);
+
+}
+    esrevaMensagem('Hello World');
+
+   function soma1(a,b) {
+       return a+b;
+
+   }
+   var resultado=soma1(3,5);
+   console.log(resultado);
+
+  function somaTudo(numeros){
+      var total=0;
+      for (var num of numeros){
+          total=total+num;
+      }
+      return total
+  }
+  var arryNumeros = [3,5,8,4,1,9,10];
+    var resultado=somaTudo(arryNumeros);
+    console.log(resultado);
+
+    //parametro rest
+
+    function escreverEndereco(rua,cidade,pais,...complemento){
+        console.log(rua);
+        console.log(cidade);
+        console.log(pais);
+        console.log(complemento)
+    }
+     escreverEndereco('Rua_Dez_de_Janeiro','Recife','Brasil','PE','Alto do Pascoal','CASA');
+    
+    //FUNCTION CALLBACK
+    
+    function somaCallback(a,b, fnCallback) {
+        return fnCallback(a + b);
+    }
+
+    console.log(somaCallback(2,5, function (total) {
+        return 2 * total;
+    }));
+
+    function subtraiCallback(a,b, ftnCallback) {
+        return ftnCallback(a - b);
+
+        }
+
+    console.log(subtraiCallback(10,6,function (total2) {
+
+        return 2*total2;
+
+        }));
+
+
+
+
+
+</SCRIPT>
+</body>
+</html>
